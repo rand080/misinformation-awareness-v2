@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نشاط إثرائي | الإعلام المضلل وأثره على المجتمع</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Amiri & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tajawal:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        olive: {
+                            deep: '#293026',
+                            dark: '#3E473A',
+                            DEFAULT: '#4F5849',
+                            soft: '#768371',
+                            light: '#9AA795'
+                        },
+                        beige: {
+                            light: '#FAF6F0',
+                            DEFAULT: '#F5EFE6',
+                            medium: '#EAE0D0',
+                            dark: '#D5C7B3'
+                        },
+                        gold: {
+                            light: '#E2CB94',
+                            DEFAULT: '#C5A059',
+                            dark: '#9E7C38'
+                        },
+                        darktext: '#2E352B'
+                    },
+                    fontFamily: {
+                        amiri: ['Amiri', 'serif'],
+                        tajawal: ['Tajawal', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #ECE5DA;
+            color: #2E352B;
+            background-image: radial-gradient(#C5A059 0.45px, transparent 0.45px), radial-gradient(#C5A059 0.45px, #ECE5DA 0.45px);
+            background-size: 18px 18px;
+            background-position: 0 0, 9px 9px;
+            background-opacity: 0.05;
+        }
+
+        .font-serif-title {
+            font-family: 'Amiri', serif;
+        }
+
+        /* Glowing lantern animation */
+        @keyframes lanternGlow {
+            0%, 100% { filter: drop-shadow(0 0 8px rgba(197, 160, 89, 0.4)); }
+            50% { filter: drop-shadow(0 0 22px rgba(197, 160, 89, 0.85)); }
+        }
+        .lantern-glow {
+            animation: lanternGlow 3.5s ease-in-out infinite;
+        }
+
+        /* Floating effect */
+        @keyframes floatSlow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-7px); }
+        }
+        .floating-element {
+            animation: floatSlow 4.5s ease-in-out infinite;
+        }
+
+        .islamic-bg-pattern {
+            background-color: rgba(62, 71, 58, 0.96);
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C5A059' fill-opacity='0.06' fill-rule='evenodd'%3E%3Cpath d='M30 30L15 0h30L30 30zM0 30l30 15v-30L0 30zm60 0L30 15v30l30-15zM30 30l15 30H15l15-30z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .islamic-bg-light {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%235C6658' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H0v40zm40 0V0L0 40h40z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Print styles */
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; padding: 0 !important; }
+            .max-w-7xl { max-width: 100% !important; }
+            .shadow-md, .shadow-xl, .shadow-2xl { shadow: none !important; box-shadow: none !important; }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-bottom-4{bottom:-1rem}.-left-3{left:-0.75rem}.-top-6{top:-1.5rem}.bottom-6{bottom:1.5rem}.left-2{left:0.5rem}.left-6{left:1.5rem}.right-6{right:1.5rem}.top-2{top:0.5rem}.top-4{top:1rem}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-top:1rem;margin-bottom:1rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-6{margin-bottom:1.5rem}.mt-0\.5{margin-top:0.125rem}.mt-2{margin-top:0.5rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-2{height:0.5rem}.h-2\.5{height:0.625rem}.h-28{height:7rem}.h-3{height:0.75rem}.h-4{height:1rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.min-h-\[440px\]{min-height:440px}.min-h-full{min-height:100%}.min-h-screen{min-height:100vh}.w-1\/2{width:50%}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-2\.5{width:0.625rem}.w-20{width:5rem}.w-28{width:7rem}.w-3{width:0.75rem}.w-3\/4{width:75%}.w-4{width:1rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.max-w-sm{max-width:24rem}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-text{cursor:text}.resize-none{resize:none}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[2\.5rem\]{border-radius:2.5rem}.rounded-\[2rem\]{border-radius:2rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-r-2{border-right-width:2px}.border-t{border-top-width:1px}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-beige-dark{--tw-border-opacity:1;border-color:rgb(213 199 179 / var(--tw-border-opacity, 1))}.border-beige-light\/10{border-color:rgb(250 246 240 / 0.1)}.border-beige-light\/15{border-color:rgb(250 246 240 / 0.15)}.border-beige-light\/20{border-color:rgb(250 246 240 / 0.2)}.border-beige-medium{--tw-border-opacity:1;border-color:rgb(234 224 208 / var(--tw-border-opacity, 1))}.border-emerald-300{--tw-border-opacity:1;border-color:rgb(110 231 183 / var(--tw-border-opacity, 1))}.border-gold{--tw-border-opacity:1;border-color:rgb(197 160 89 / var(--tw-border-opacity, 1))}.border-gold\/20{border-color:rgb(197 160 89 / 0.2)}.border-gold\/30{border-color:rgb(197 160 89 / 0.3)}.border-gold\/40{border-color:rgb(197 160 89 / 0.4)}.border-olive\/30{border-color:rgb(79 88 73 / 0.3)}.border-red-500\/40{border-color:rgb(239 68 68 / 0.4)}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-beige-light{--tw-bg-opacity:1;background-color:rgb(250 246 240 / var(--tw-bg-opacity, 1))}.bg-beige-light\/10{background-color:rgb(250 246 240 / 0.1)}.bg-beige-light\/5{background-color:rgb(250 246 240 / 0.05)}.bg-beige-medium{--tw-bg-opacity:1;background-color:rgb(234 224 208 / var(--tw-bg-opacity, 1))}.bg-beige-medium\/40{background-color:rgb(234 224 208 / 0.4)}.bg-beige-medium\/50{background-color:rgb(234 224 208 / 0.5)}.bg-beige-medium\/60{background-color:rgb(234 224 208 / 0.6)}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-gold{--tw-bg-opacity:1;background-color:rgb(197 160 89 / var(--tw-bg-opacity, 1))}.bg-gold\/15{background-color:rgb(197 160 89 / 0.15)}.bg-gold\/20{background-color:rgb(197 160 89 / 0.2)}.bg-gold\/40{background-color:rgb(197 160 89 / 0.4)}.bg-olive-dark{--tw-bg-opacity:1;background-color:rgb(62 71 58 / var(--tw-bg-opacity, 1))}.bg-olive-dark\/70{background-color:rgb(62 71 58 / 0.7)}.bg-olive-deep{--tw-bg-opacity:1;background-color:rgb(41 48 38 / var(--tw-bg-opacity, 1))}.bg-olive-deep\/70{background-color:rgb(41 48 38 / 0.7)}.bg-olive-deep\/80{background-color:rgb(41 48 38 / 0.8)}.bg-olive-deep\/90{background-color:rgb(41 48 38 / 0.9)}.bg-olive-deep\/95{background-color:rgb(41 48 38 / 0.95)}.bg-olive\/20{background-color:rgb(79 88 73 / 0.2)}.bg-red-400{--tw-bg-opacity:1;background-color:rgb(248 113 113 / var(--tw-bg-opacity, 1))}.bg-red-900\/40{background-color:rgb(127 29 29 / 0.4)}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pr-3{padding-right:0.75rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-beige-light{--tw-text-opacity:1;color:rgb(250 246 240 / var(--tw-text-opacity, 1))}.text-beige-medium{--tw-text-opacity:1;color:rgb(234 224 208 / var(--tw-text-opacity, 1))}.text-beige-medium\/40{color:rgb(234 224 208 / 0.4)}.text-beige-medium\/60{color:rgb(234 224 208 / 0.6)}.text-beige-medium\/70{color:rgb(234 224 208 / 0.7)}.text-beige-medium\/80{color:rgb(234 224 208 / 0.8)}.text-beige-medium\/90{color:rgb(234 224 208 / 0.9)}.text-darktext{--tw-text-opacity:1;color:rgb(46 53 43 / var(--tw-text-opacity, 1))}.text-darktext\/70{color:rgb(46 53 43 / 0.7)}.text-darktext\/80{color:rgb(46 53 43 / 0.8)}.text-darktext\/85{color:rgb(46 53 43 / 0.85)}.text-darktext\/90{color:rgb(46 53 43 / 0.9)}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-gold{--tw-text-opacity:1;color:rgb(197 160 89 / var(--tw-text-opacity, 1))}.text-gold-dark{--tw-text-opacity:1;color:rgb(158 124 56 / var(--tw-text-opacity, 1))}.text-gold-light{--tw-text-opacity:1;color:rgb(226 203 148 / var(--tw-text-opacity, 1))}.text-gold\/90{color:rgb(197 160 89 / 0.9)}.text-olive-dark{--tw-text-opacity:1;color:rgb(62 71 58 / var(--tw-text-opacity, 1))}.text-olive-dark\/60{color:rgb(62 71 58 / 0.6)}.text-olive-deep{--tw-text-opacity:1;color:rgb(41 48 38 / var(--tw-text-opacity, 1))}.text-red-200{--tw-text-opacity:1;color:rgb(254 202 202 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-85{opacity:0.85}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur{--tw-backdrop-blur:blur(8px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-gold:hover{--tw-border-opacity:1;border-color:rgb(197 160 89 / var(--tw-border-opacity, 1))}.hover\:bg-gold-dark:hover{--tw-bg-opacity:1;background-color:rgb(158 124 56 / var(--tw-bg-opacity, 1))}.hover\:bg-olive-soft:hover{--tw-bg-opacity:1;background-color:rgb(118 131 113 / var(--tw-bg-opacity, 1))}.hover\:bg-red-800\/60:hover{background-color:rgb(153 27 27 / 0.6)}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-gold\/60:focus{--tw-ring-color:rgb(197 160 89 / 0.6)}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:p-10{padding:2.5rem}.sm\:p-3{padding:0.75rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-6{grid-column:span 6 / span 6}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.lg\:p-10{padding:2.5rem}.lg\:p-12{padding:3rem}.lg\:text-5xl{font-size:3rem;line-height:1}}</style></head>
+<body class="antialiased min-h-screen p-3 sm:p-6 lg:p-10 text-darktext">
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto space-y-6 md:space-y-8" id="documentBody">
+
+        <!-- ==========================================
+             HERO SPLIT CARD: Academic Header
+             ========================================== -->
+        <section class="bg-beige-medium p-2.5 sm:p-3 rounded-[2.5rem] border border-gold/30 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 rounded-[2rem] overflow-hidden">
+                
+                <!-- Full-width Academic & Title Banner (Olive Green Dark) -->
+                <div class="lg:col-span-12 islamic-bg-pattern text-beige-light p-6 sm:p-10 lg:p-12 flex flex-col justify-between relative min-h-[440px]">
+                    <div class="space-y-5">
+                        
+                        <!-- Badges -->
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="bg-gold/20 text-gold-light border border-gold/40 text-xs font-bold px-3.5 py-1.5 rounded-full inline-block">
+                                نشاط إثرائي لمقرر: الإسلام وبناء المجتمع (سلم 102)
+                            </span>
+                            <span class="bg-beige-light/10 text-beige-medium border border-beige-light/20 text-xs font-semibold px-3 py-1.5 rounded-full">
+                                الفصل الدراسي: 481
+                            </span>
+                        </div>
+
+                        <!-- Main Title -->
+                        <div>
+                            <h1 class="font-serif-title text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-beige-light mb-2">
+                                الإعلام المضلل وأثره على المجتمع
+                            </h1>
+                            <h2 class="font-serif-title text-xl sm:text-2xl text-gold font-medium">
+                                بين الوعي والمسؤولية
+                            </h2>
+                        </div>
+
+                        <p class="text-xs sm:text-sm text-beige-medium/90 leading-relaxed font-light border-r-2 border-gold pr-3 py-1">
+                            دراسة موضوعية تحليليّة تُبرز مفهوم الإعلام المضلل، أضراره الفردية والمجتمعية، وموقف الشريعة الإسلامية منه مع استعراض سبُل التثبت والوقاية.
+                        </p>
+                    </div>
+
+                    <!-- Student Info Box -->
+                    <div class="mt-8 pt-6 border-t border-beige-light/15 bg-olive-deep/80 p-4 sm:p-5 rounded-2xl border border-gold/30 space-y-2">
+                        <div class="text-xs text-gold font-bold uppercase tracking-wider">بيانات التقديم للأكاديمية:</div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                            <div class="flex items-center gap-2 bg-beige-light/5 p-2.5 rounded-xl border border-gold/20">
+                                <span class="font-bold text-beige-light shrink-0">إعداد الطالبة:</span>
+                                <span class="text-gold font-bold px-1">رند تركي الغضية</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-beige-light/5 p-2.5 rounded-xl border border-gold/20">
+                                <span class="font-bold text-beige-light shrink-0">الرقم الجامعي:</span>
+                                <span class="text-gold font-bold px-1">452200646</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SECTION 1 & 2: INTRODUCTION & CONCEPT
+             ========================================== -->
+        <section class="bg-beige-light p-6 sm:p-10 rounded-[2.5rem] border border-gold/30 shadow-md">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- 1. Introduction Card -->
+                <div class="lg:col-span-6 bg-beige-medium/50 p-6 rounded-3xl border border-gold/30 space-y-3">
+                    <div class="flex items-center gap-2 text-gold-dark font-bold text-xs uppercase tracking-wider">
+                        <span class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center font-bold">1</span>
+                        <span>مدخل النشاط الإثرائي</span>
+                    </div>
+                    <h3 class="font-serif-title text-2xl font-bold text-olive-deep">1. مقدمة</h3>
+                    <div class="text-sm text-darktext/85 leading-relaxed space-y-3">
+                        <p>
+                            أصبح الإعلام جزءًا أساسيًا من حياة الإنسان اليومية، وأصبحت الأخبار والمعلومات تصل إلينا بسرعة كبيرة من خلال وسائل الإعلام المختلفة ومنصات التواصل الاجتماعي. ومع هذا الانتشار، ظهرت مشكلة الإعلام المضلل الذي قد ينشر معلومات غير صحيحة أو أخبارًا غير موثوقة، مما يؤثر في وعي الأفراد واستقرار المجتمع.
+                        </p>
+                        <p class="font-medium text-olive-dark">
+                            ومن هنا تظهر أهمية التثبت من الأخبار، والتحلي بالوعي والمسؤولية قبل تصديق المعلومات أو إعادة نشرها.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2. Concept of Misleading Media -->
+                <div class="lg:col-span-6 bg-olive-dark text-beige-light p-6 rounded-3xl border border-gold/30 space-y-4 flex flex-col justify-between min-h-full">
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2 text-gold font-bold text-xs uppercase tracking-wider">
+                            <span class="w-6 h-6 rounded-full bg-gold/20 flex items-center justify-center font-bold text-gold">2</span>
+                            <span>التأصيل والتحديد المفهومي</span>
+                        </div>
+                        <h3 class="font-serif-title text-2xl font-bold text-beige-light">2. مفهوم الإعلام المضلل</h3>
+                        <div class="text-sm text-beige-medium/90 leading-relaxed space-y-3">
+                            <p>
+                                الإعلام هو تزويد الناس بالمعلومات الصحيحة والأخبار والإبداعات؛ مما يساعد على فهم المشكلات وتكوين رأي صائب ينمّي المجتمع ويرتقي بأفراده.
+                            </p>
+                            <p class="bg-olive-deep/80 p-3.5 rounded-2xl border border-gold/30 text-beige-light font-medium">
+                                أما عندما يخلو الإعلام من المعلومات الصحيحة والأخبار الموثوقة، فإنه يتحول إلى وسيلة للتضليل والتأثير السلبي في الناس.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Source Citation Box -->
+                    <div class="pt-4 border-t border-beige-light/15 text-xs text-gold/90 font-medium flex items-center gap-2">
+                        <svg class="w-4 h-4 shrink-0 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        <span>المصدر: ملخص مقرر سلم 102، الوحدة الثالثة، المشكلة الثانية: انتشار وسائل الإعلام المضللة، صفحة PDF رقم 29.</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SECTION 3: FORMS OF MISLEADING MEDIA (5 Tiles Gallery)
+             ========================================== -->
+        <section class="bg-beige-medium p-2.5 sm:p-3 rounded-[2.5rem] border border-gold/20 shadow-md">
+            <div class="bg-beige-light p-6 sm:p-10 rounded-[2rem] border border-gold/30 space-y-6">
+                
+                <div class="text-center max-w-2xl mx-auto space-y-2">
+                    <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">أنماط وأشكال التضليل</span>
+                    <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-olive-deep">3. صور الإعلام المضلل</h2>
+                    <p class="text-xs sm:text-sm text-darktext/70">تظهر صور التضليل الإعلامي في ممارسات متعددة ومتنوعة تتطلب الوعي والتنبه:</p>
+                </div>
+
+                <!-- 5 Visual Feature Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                    
+                    <!-- Form 1 -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-2xl p-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-olive-dark text-gold flex items-center justify-center font-bold text-sm">
+                                01
+                            </div>
+                            <h4 class="font-serif-title font-bold text-olive-deep text-base">عدم التثبت</h4>
+                            <p class="text-xs text-darktext/80 leading-relaxed">
+                                نشر الأخبار دون التأكد من صحتها.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Form 2 -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-2xl p-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-olive-dark text-gold flex items-center justify-center font-bold text-sm">
+                                02
+                            </div>
+                            <h4 class="font-serif-title font-bold text-olive-deep text-base">الشائعات</h4>
+                            <p class="text-xs text-darktext/80 leading-relaxed">
+                                تداول الشائعات والمعلومات مجهولة المصدر.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Form 3 -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-2xl p-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-olive-dark text-gold flex items-center justify-center font-bold text-sm">
+                                03
+                            </div>
+                            <h4 class="font-serif-title font-bold text-olive-deep text-base">اجتزاء النصوص</h4>
+                            <p class="text-xs text-darktext/80 leading-relaxed">
+                                اجتزاء التصريحات أو إخراجها من سياقها الأصلي.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Form 4 -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-2xl p-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-olive-dark text-gold flex items-center justify-center font-bold text-sm">
+                                04
+                            </div>
+                            <h4 class="font-serif-title font-bold text-olive-deep text-base">التزييف البصري</h4>
+                            <p class="text-xs text-darktext/80 leading-relaxed">
+                                استخدام الصور والمقاطع المعدلة لتقديم أحداث غير حقيقية.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Form 5 -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-2xl p-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-olive-dark text-gold flex items-center justify-center font-bold text-sm">
+                                05
+                            </div>
+                            <h4 class="font-serif-title font-bold text-olive-deep text-base">عناوين الإثارة</h4>
+                            <p class="text-xs text-darktext/80 leading-relaxed">
+                                نشر العناوين المبالغ فيها بهدف جذب الانتباه والنقرات.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SECTION 4: IMPACT OF MISLEADING MEDIA (Individual vs Society)
+             ========================================== -->
+        <section class="bg-beige-light p-6 sm:p-10 rounded-[2.5rem] border border-gold/30 shadow-md">
+            <div class="space-y-6">
+                
+                <div class="text-center max-w-xl mx-auto space-y-2">
+                    <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">تحليل التبعات والآثار</span>
+                    <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-olive-deep">4. أثر الإعلام المضلل على المجتمع</h2>
+                </div>
+
+                <!-- 2 Column Comparison Split -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Individual Impact Box -->
+                    <div class="bg-beige-medium/60 border-2 border-olive/30 rounded-3xl p-6 space-y-4">
+                        <div class="flex items-center gap-3 border-b border-gold/30 pb-3">
+                            <div class="p-2 bg-olive-dark text-gold rounded-xl">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-serif-title text-xl font-bold text-olive-deep">على الفرد:</h3>
+                                <span class="text-[11px] text-olive-dark">الأضرار النفسية والمعرفية الفردية</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-darktext/90">
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+                                <span>تكوين أفكار ومعلومات غير صحيحة تؤثر على تصوراته.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+                                <span>التأثر بالخوف والقلق والاضطراب نتيجة الأخبار الكاذبة.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+                                <span>اتخاذ قرارات غير صائبة بناءً على معلومات غير موثوقة.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Societal Impact Box -->
+                    <div class="bg-olive-dark text-beige-light border-2 border-gold/40 rounded-3xl p-6 space-y-4">
+                        <div class="flex items-center gap-3 border-b border-beige-light/15 pb-3">
+                            <div class="p-2 bg-gold/20 text-gold rounded-xl">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-serif-title text-xl font-bold text-beige-light">على المجتمع:</h3>
+                                <span class="text-[11px] text-gold">الآثار الممتدة للأمن والاستقرار المجتمعي</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3 text-xs sm:text-sm text-beige-medium/90">
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+                                <span>انتشار الشائعات وسوء الفهم بين فئات المجتمع.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+                                <span>إثارة الخلافات والنزاعات بين أفراد المجتمع.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+                                <span>التأثير في الثقة المتبادلة بين الناس والمؤسسات الوطنية.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <span class="w-2 h-2 rounded-full bg-gold mt-2 shrink-0"></span>
+                                <span>إضعاف الوعي المجتمعي وحس المسؤولية في تداول المعلومات.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SECTION 5: ISLAMIC PERSPECTIVE & EVIDENCES
+             ========================================== -->
+        <section class="islamic-bg-pattern text-beige-light p-6 sm:p-10 lg:p-12 rounded-[2.5rem] border border-gold/40 shadow-xl relative overflow-hidden">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+                <span class="text-xs font-bold text-gold uppercase tracking-wider">المنظور الشرعي والتأصيل القرآني والنبوي</span>
+                <h2 class="font-serif-title text-3xl sm:text-4xl font-bold text-beige-light">5. موقف الإسلام من نقل الأخبار</h2>
+                <p class="text-xs sm:text-sm text-beige-medium/80 font-light">
+                    حث الإسلام على التثبت من الأخبار، ونهى عن اتباع ما لا يعلم الإنسان صحته، ومن الأدلة على ذلك:
+                </p>
+                <div class="w-20 h-1 bg-gold mx-auto rounded-full mt-2"></div>
+            </div>
+
+            <!-- 3 Evidences Cards Layout -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Evidence 1 -->
+                <div class="bg-olive-deep/90 border border-gold/40 rounded-3xl p-6 space-y-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between border-b border-gold/30 pb-2">
+                            <span class="text-xs text-gold font-bold">الدليل الأول: القرآن الكريم</span>
+                            <span class="text-[10px] text-beige-medium/70">سورة الحجرات، الآية 6</span>
+                        </div>
+                        <div class="bg-beige-light/5 p-4 rounded-2xl border border-gold/20 font-serif-title text-base sm:text-lg text-gold-light text-center leading-relaxed">
+                            ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ﴾
+                        </div>
+                        <div class="text-[11px] text-beige-medium/70 text-center">
+                            صفحة 516 في مصحف المدينة النبوية.
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-beige-light/10 text-xs text-beige-medium/90 space-y-1">
+                        <strong class="text-gold font-bold block">وجه الاستدلال:</strong>
+                        <p>الأمر الصريح بالتثبت من الأخبار قبل قبولها أو التصرف بناءً عليها.</p>
+                    </div>
+                </div>
+
+                <!-- Evidence 2 -->
+                <div class="bg-olive-deep/90 border border-gold/40 rounded-3xl p-6 space-y-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between border-b border-gold/30 pb-2">
+                            <span class="text-xs text-gold font-bold">الدليل الثاني: القرآن الكريم</span>
+                            <span class="text-[10px] text-beige-medium/70">سورة الإسراء، الآية 36</span>
+                        </div>
+                        <div class="bg-beige-light/5 p-4 rounded-2xl border border-gold/20 font-serif-title text-base sm:text-lg text-gold-light text-center leading-relaxed">
+                            ﴿وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ إِنَّ السَّمْعَ وَالْبَصَرَ وَالْفُؤَادَ كُلُّ أُولَٰئِكَ كَانَ عَنْهُ مَسْئُولًا﴾
+                        </div>
+                        <div class="text-[11px] text-beige-medium/70 text-center">
+                            صفحة 285 في مصحف المدينة النبوية.
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-beige-light/10 text-xs text-beige-medium/90 space-y-1">
+                        <strong class="text-gold font-bold block">وجه الاستدلال:</strong>
+                        <p>النهي الجازم عن اتباع أو نقل ما لا يقوم على علم أو تحقق موثوق.</p>
+                    </div>
+                </div>
+
+                <!-- Evidence 3 -->
+                <div class="bg-olive-deep/90 border border-gold/40 rounded-3xl p-6 space-y-4 flex flex-col justify-between hover:border-gold transition-all duration-300">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between border-b border-gold/30 pb-2">
+                            <span class="text-xs text-gold font-bold">الدليل الثالث: السنة النبوية</span>
+                            <span class="text-[10px] text-beige-medium/70">صحيح البخاري 33 / مسلم 59</span>
+                        </div>
+                        <div class="bg-beige-light/5 p-4 rounded-2xl border border-gold/20 font-serif-title text-sm sm:text-base text-gold-light text-center leading-relaxed">
+                            قال رسول الله ﷺ: «آية المنافق ثلاث: إذا حدث كذب، وإذا وعد أخلف، وإذا اؤتمن خان».
+                        </div>
+                        <div class="text-[11px] text-beige-medium/70 text-center">
+                            الراوي: أبو هريرة رضي الله عنه.
+                        </div>
+                    </div>
+                    <div class="pt-3 border-t border-beige-light/10 text-xs text-beige-medium/90 space-y-1">
+                        <strong class="text-gold font-bold block">وجه الاستدلال:</strong>
+                        <p>التحذير النبوي من الكذب ونقل غير الحقيقة، وهو من أبرز صور التضليل الإعلامي.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SECTION: SCHOLARS' OPINIONS & VIDEO GALLERY
+             ========================================== -->
+        <section class="bg-beige-light p-6 sm:p-10 rounded-[2.5rem] border border-gold/30 shadow-md space-y-6">
+            
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-gold/20 pb-4">
+                <div class="space-y-1 text-center sm:text-right">
+                    <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">التوجيه الإيماني والفقهي</span>
+                    <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-olive-deep">آراء العلماء ومقاطع الفيديو التوعوية</h2>
+                    <p class="text-xs text-darktext/70">مجموعة مختارة من مقاطع التوعية الشرعية والفتاوى في التحذير من الشائعات وتناول الأخبار:</p>
+                </div>
+            </div>
+
+            <!-- Videos Grid Container -->
+            <div id="videosGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Main Featured Video Card -->
+                <div class="video-card bg-beige-medium/60 border border-gold/30 rounded-3xl overflow-hidden flex flex-col justify-between hover:border-gold transition-all duration-300 shadow-sm relative group">
+                    <div class="space-y-3">
+                        <div class="relative w-full aspect-video bg-olive-deep">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eYM3Jd77dns?si=Y_AUWBWD0sQ1r6BR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="bg-gold/20 text-olive-deep border border-gold/30 text-[10px] font-bold px-2.5 py-0.5 rounded-full scholar-name">
+                                    توعية شرعية ومجتمعية
+                                </span>
+                            </div>
+                            <h4 class="font-serif-title font-bold text-olive-deep text-base video-title">
+                                خطورة الشائعات والإعلام المضلل ووجوب التثبت
+                            </h4>
+                            <p class="text-xs text-darktext/80 leading-relaxed video-desc">
+                                بيان الموقف الشرعي والمسؤولية الفردية والمجتمعية في التعامل مع الأخبار والحد من انتشار التضليل الرقمي.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SECTION 6: PROTECTION & CURRICULUM PILLARS + VERIFIER SIMULATOR
+             ========================================== -->
+        <section class="bg-beige-light p-6 sm:p-10 rounded-[2.5rem] border border-gold/30 shadow-md space-y-8">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">سبُل الوقاية والمعالجة</span>
+                <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-olive-deep">6. كيف نحمي أنفسنا من الإعلام المضلل؟</h2>
+            </div>
+
+            <!-- 3 Core Curriculum Pillars -->
+            <div class="bg-olive-dark text-beige-light p-6 rounded-3xl border border-gold/40 shadow-inner space-y-6">
+                <div class="text-center space-y-1">
+                    <h3 class="font-serif-title text-xl font-bold text-gold">المرتكزات الأساسية وفق المقرر الدراسي (سلم 102)</h3>
+                    <p class="text-xs text-beige-medium/80">أساليب علاجية تزود الفرد بالحماية النفسية والإيمانية ضد التضليل:</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center p-4 bg-olive-deep/70 rounded-2xl border border-gold/30 space-y-2">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-gold/20 text-gold flex items-center justify-center font-bold text-lg">1</div>
+                        <h4 class="font-bold text-beige-light text-base">مراقبة الله في السر والعلن</h4>
+                        <p class="text-xs text-beige-medium/70">استشعار المحاسبة الإلهية قبل كتابة أو مشاركة أي خبر.</p>
+                    </div>
+
+                    <div class="text-center p-4 bg-olive-deep/70 rounded-2xl border border-gold/30 space-y-2">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-gold/20 text-gold flex items-center justify-center font-bold text-lg">2</div>
+                        <h4 class="font-bold text-beige-light text-base">تنظيم الوقت</h4>
+                        <p class="text-xs text-beige-medium/70">تقليل الاستهلاك المفرط لمواقع التواصل وتفادي الإغراق المعلوماتي.</p>
+                    </div>
+
+                    <div class="text-center p-4 bg-olive-deep/70 rounded-2xl border border-gold/30 space-y-2">
+                        <div class="w-12 h-12 mx-auto rounded-xl bg-gold/20 text-gold flex items-center justify-center font-bold text-lg">3</div>
+                        <h4 class="font-bold text-beige-light text-base">ممارسة الهوايات النافعة</h4>
+                        <p class="text-xs text-beige-medium/70">استثمار الفراغ فيما ينفع الفرد والمجتمع دينياً وعلمياً.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practical Reinforcement Steps -->
+            <div class="bg-beige-medium/50 p-6 rounded-3xl border border-gold/30 space-y-3">
+                <h3 class="font-serif-title text-lg font-bold text-olive-deep">خطوات تعزيز الوعي الرقمي اليومي:</h3>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs sm:text-sm text-darktext/90">
+                    <li class="bg-beige-light p-3 rounded-xl border border-gold/20 flex items-center gap-2">
+                        <span class="text-gold font-bold">✓</span> التأكد من مصدر الخبر قبل نشره.
+                    </li>
+                    <li class="bg-beige-light p-3 rounded-xl border border-gold/20 flex items-center gap-2">
+                        <span class="text-gold font-bold">✓</span> الرجوع إلى الجهات الرسمية عند وجود أخبار مهمة.
+                    </li>
+                    <li class="bg-beige-light p-3 rounded-xl border border-gold/20 flex items-center gap-2">
+                        <span class="text-gold font-bold">✓</span> عدم إعادة إرسال المعلومات مجهولة المصدر.
+                    </li>
+                    <li class="bg-beige-light p-3 rounded-xl border border-gold/20 flex items-center gap-2">
+                        <span class="text-gold font-bold">✓</span> التمييز بين الخبر والرأي الشخصي.
+                    </li>
+                    <li class="bg-beige-light p-3 rounded-xl border border-gold/20 flex items-center gap-2">
+                        <span class="text-gold font-bold">✓</span> عدم الانسياق وراء العناوين المثيرة.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Interactive Fact-Check Simulator (Interactive Tool) -->
+            <div class="no-print bg-olive-deep text-beige-light p-6 rounded-3xl border border-gold/40 space-y-4">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="font-serif-title text-xl font-bold text-gold">مختبر التثبت التفاعلي (Fact-Check Simulator)</h3>
+                        <p class="text-xs text-beige-medium/80">اختبر مهاراتك في التثبت من النص أو الخبر قبل اعتماده:</p>
+                    </div>
+                    <span class="text-xs bg-gold/20 text-gold px-3 py-1 rounded-full border border-gold/30">أداة تفاعلية</span>
+                </div>
+
+                <div class="space-y-3">
+                    <textarea id="simText" rows="2" placeholder="أدخل نص الخبر المتداول هنا لاختبار مدى موثوقيته..." class="w-full p-3 rounded-2xl bg-beige-light text-darktext text-xs sm:text-sm border border-gold/40 focus:outline-none focus:ring-2 focus:ring-gold/60 resize-none"></textarea>
+                    
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <div class="flex gap-2">
+                            <button onclick="setSimExample(1)" class="text-xs text-gold hover:underline">مثال 1: رابط مجاني</button>
+                            <span class="text-beige-medium/40">•</span>
+                            <button onclick="setSimExample(2)" class="text-xs text-gold hover:underline">مثال 2: بيان واس الرسمية</button>
+                        </div>
+                        <button onclick="runFactChecker()" class="bg-gold hover:bg-gold-dark text-olive-deep font-bold px-5 py-2 rounded-xl text-xs transition-all shadow">
+                            تحليل ومطابقة الخبر
+                        </button>
+                    </div>
+
+                    <div id="simResult" class="hidden p-4 rounded-2xl border text-xs leading-relaxed"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             SECTION 7: OFFICIAL SAUDI SOURCES
+             ========================================== -->
+        <section class="bg-beige-medium p-2.5 sm:p-3 rounded-[2.5rem] border border-gold/20 shadow-md">
+            <div class="bg-beige-light p-6 sm:p-10 rounded-[2rem] border border-gold/30 space-y-6">
+                
+                <div class="text-center max-w-xl mx-auto space-y-2">
+                    <span class="text-xs font-bold text-gold-dark uppercase tracking-wider">الجهود الوطنية المعتمدة</span>
+                    <h2 class="font-serif-title text-2xl sm:text-3xl font-bold text-olive-deep">7. إثراء من مصادر سعودية رسمية</h2>
+                    <p class="text-xs text-darktext/70">يمكن الاستفادة من المواد التوعوية الصادرة عن الجهات الرسمية في المملكة العربية السعودية:</p>
+                </div>
+
+                <!-- 3 Official Saudi Entities -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    
+                    <!-- SDAIA -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-3xl p-5 space-y-3 hover:border-gold transition-all">
+                        <div class="w-12 h-12 rounded-2xl bg-olive-dark text-gold flex items-center justify-center font-bold">
+                            SDAIA
+                        </div>
+                        <h4 class="font-serif-title font-bold text-olive-deep text-lg">سدايا</h4>
+                        <p class="text-xs text-darktext/80 leading-relaxed">
+                            الهيئة السعودية للبيانات والذكاء الاصطناعي: مواد التوعية بالتزييف العميق والمحتوى الرقمي المزيّف.
+                        </p>
+                    </div>
+
+                    <!-- GAMR -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-3xl p-5 space-y-3 hover:border-gold transition-all">
+                        <div class="w-12 h-12 rounded-2xl bg-olive-dark text-gold flex items-center justify-center font-bold">
+                            GAMR
+                        </div>
+                        <h4 class="font-serif-title font-bold text-olive-deep text-lg">تنظيم الإعلام</h4>
+                        <p class="text-xs text-darktext/80 leading-relaxed">
+                            الهيئة العامة لتنظيم الإعلام: الأدلة والضوابط والأطر التنظيمية المتعلقة بالعمل الإعلامي.
+                        </p>
+                    </div>
+
+                    <!-- SPA -->
+                    <div class="bg-beige-medium/60 border border-gold/30 rounded-3xl p-5 space-y-3 hover:border-gold transition-all">
+                        <div class="w-12 h-12 rounded-2xl bg-olive-dark text-gold flex items-center justify-center font-bold">
+                            واس
+                        </div>
+                        <h4 class="font-serif-title font-bold text-olive-deep text-lg">وكالة الأنباء السعودية</h4>
+                        <p class="text-xs text-darktext/80 leading-relaxed">
+                            وكالة الأنباء السعودية (واس): المواد والتقارير الموثوقة المتعلقة بالشائعات وأثرها على المجتمع.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Disclaimer Notice Box -->
+                <div class="bg-amber-50 border border-amber-300 text-amber-900 p-4 rounded-2xl text-xs leading-relaxed flex items-start gap-3">
+                    <span class="text-amber-600 font-bold text-base mt-0.5">⚠️</span>
+                    <div>
+                        <strong>تنبيه منهجي:</strong> تضاف روابط المواد الرسمية المحددة بعد اختيار المادة المناسبة والتحقق من رابطها ومحتواها. ولا يُنسب أي مقطع إلى وزارة أو جهة حكومية إلا إذا كان منشورًا عبر قناتها الرسمية الموثقة.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ==========================================
+             SECTION 8: CONCLUSION & REFERENCES
+             ========================================== -->
+        <section class="bg-olive-deep text-beige-light p-6 sm:p-10 rounded-[2.5rem] border border-gold/40 shadow-xl space-y-8">
+            
+            <!-- 8. Conclusion -->
+            <div class="space-y-4 max-w-3xl mx-auto text-center">
+                <span class="text-xs text-gold font-bold uppercase tracking-wider">خاتمة النشاط الإثرائي</span>
+                <h2 class="font-serif-title text-3xl font-bold text-beige-light">8. الخاتمة</h2>
+                <div class="text-sm sm:text-base text-beige-medium/90 leading-relaxed space-y-3">
+                    <p>
+                        في الختام، يتضح أن الإعلام وسيلة مؤثرة في بناء وعي المجتمع، وقد يكون نافعًا عندما يقوم على الصدق والمصداقية، أو ضارًا عندما يُستخدم لنشر الشائعات والمعلومات المضللة.
+                    </p>
+                    <p>
+                        وقد أرشدنا الإسلام إلى أهمية التثبت من الأخبار وتحمل مسؤولية ما ننقله، لذلك فإن الوعي الإعلامي مسؤولية مشتركة تبدأ من الفرد وتمتد إلى المجتمع بأكمله.
+                    </p>
+                    <div class="bg-gold/15 p-4 rounded-2xl border border-gold/40 text-gold-light font-serif-title text-lg sm:text-xl font-bold my-4">
+                        «فلنجعل التثبت عادة، والوعي مسؤولية، والصدق أساسًا لكل ما ننشره»
+                    </div>
+                </div>
+            </div>
+
+            <!-- References Collapsible / Formatted Box -->
+            <div class="pt-8 border-t border-beige-light/15 space-y-4">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-serif-title text-xl font-bold text-gold">المراجع الأكاديمية والمصادر:</h3>
+                    <span class="text-xs text-beige-medium/60">8 مراجع معتمدة</span>
+                </div>
+
+                <ol class="grid grid-cols-1 md:grid-cols-2 gap-2.5 text-xs text-beige-medium/80 list-decimal list-inside">
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        ملخص مقرر سلم 102، الوحدة الثالثة: المشكلات الاجتماعية، المشكلة الثانية: انتشار وسائل الإعلام المضللة، صفحة PDF رقم 29.
+                    </li>
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        القرآن الكريم، سورة الحجرات، الآية 6.
+                    </li>
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        القرآن الكريم، سورة الإسراء، الآية 36.
+                    </li>
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        صحيح البخاري، حديث رقم 33.
+                    </li>
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        صحيح مسلم، حديث رقم 59.
+                    </li>
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا).
+                    </li>
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        الهيئة العامة لتنظيم الإعلام (GAMR).
+                    </li>
+                    <li class="bg-olive-dark/70 p-2.5 rounded-xl border border-gold/20">
+                        وكالة الأنباء السعودية (واس).
+                    </li>
+                </ol>
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="bg-beige-medium/40 text-olive-dark rounded-3xl p-6 border border-gold/30 text-center text-xs space-y-2">
+            <div>نشاط إثرائي مخصص لمقرر <strong>الإسلام وبناء المجتمع (سلم 102)</strong> - الفصل الدراسي 481</div>
+            <div class="text-[11px] text-olive-dark/60">تم إعداد الصفحة بنمط البطاقات الإسلامية الموزونة والتصميم التفاعلي</div>
+        </footer>
+
+    </div>
+
+
+    <!-- Toast Notification Overlay -->
+    <div id="toast" class="fixed bottom-6 left-6 bg-olive-deep text-beige-light border-2 border-gold px-5 py-3 rounded-2xl shadow-2xl z-50 hidden transition-all duration-300 flex items-center gap-3 text-xs sm:text-sm">
+        <span class="text-gold font-bold text-base">✓</span>
+        <span id="toastMsg">تم التحديث بنجاح</span>
+    </div>
+
+
+    <!-- JavaScript Core Logic (Fact-Checking Simulator only) -->
+    <script>
+        // Toast Helper
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.innerText = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4000);
+        }
+
+        // Fact Checker Interactive Tool
+        function setSimExample(type) {
+            const simText = document.getElementById('simText');
+            if (type === 1) {
+                simText.value = "انشر تؤجر: رابط تسجيل سلال غذائية رمضانية مجانية عبر الرابط bit.ly/free-ramadan";
+            } else if (type === 2) {
+                simText.value = "واس: صرّح مصدر مسؤول في وزارة الداخلية بعدم صحة الأخبار المتداولة بشأن تغيير ساعات التعديل.";
+            }
+        }
+
+        function runFactChecker() {
+            const val = document.getElementById('simText').value.trim();
+            const res = document.getElementById('simResult');
+            if (!val) {
+                alert('يرجى ادخال نص للتثبت منه.');
+                return;
+            }
+
+            res.classList.remove('hidden');
+            if (val.includes('bit.ly') || val.includes('انشر تؤجر') || val.includes('مجانية')) {
+                res.className = "p-4 rounded-2xl bg-amber-900/60 border border-amber-500 text-amber-100 text-xs space-y-1";
+                res.innerHTML = "<strong>نتيجة الفحص (شائعة / غير موثوق):</strong> يظهر بالنص عبارات تجييش وتوجيه وروابط مختصرة مجهولة. يُوصى بـ: عدم إعادة الإرسال والتأكد من المصادر الرسمية.";
+            } else {
+                res.className = "p-4 rounded-2xl bg-emerald-900/60 border border-emerald-500 text-emerald-100 text-xs space-y-1";
+                res.innerHTML = "<strong>نتيجة الفحص (مؤشر مصداقية مرتفع):</strong> النص يتضمن إسناداً رسمياً ولغة محايدة خالِية من التهويل. يفضل مطابقتها في الموقع الرسمي للجهة.";
+            }
+        }
+    </script>
+
+</body></html>
