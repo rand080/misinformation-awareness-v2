@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الإعلام المضلل وأثره على المجتمع — بين الوعي والمسؤولية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-outer: #262c24;
+      --olive-dark: #3e473a;
+      --olive-mid: #5c6658;
+      --olive-soft: #7b8577;
+      --cream-bg: #f5efe6;
+      --cream-card: #efe7da;
+      --cream-deep: #e3d8c6;
+      --gold: #c5a059;
+      --gold-light: #e0c489;
+      --ink-dark: #252b22;
+      --ink-muted: #555e50;
+      --radius-xl: 2.5rem;
+      --radius-lg: 1.5rem;
+      --shadow-card: 0 18px 40px rgba(20, 25, 18, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background-color: var(--bg-outer);
+      color: var(--ink-dark);
+      line-height: 1.85;
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    .page-stack {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .card-shell {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .card-cream {
+      background: var(--cream-bg);
+      color: var(--ink-dark);
+      padding: 2.5rem;
+    }
+
+    .card-olive {
+      background: var(--olive-dark);
+      color: var(--cream-bg);
+      padding: 2.5rem;
+      border: 1px solid rgba(224, 196, 137, 0.22);
+    }
+
+    /* بطاقة الهيرو بدون صورة جانبية */
+    .hero-banner {
+      background: var(--olive-dark);
+      color: var(--cream-bg);
+      padding: 2.85rem;
+      border: 1px solid rgba(224, 196, 137, 0.25);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .badge-gold {
+      display: inline-block;
+      background: rgba(197, 160, 89, 0.18);
+      color: var(--gold-light);
+      border: 1px solid rgba(224, 196, 137, 0.45);
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      width: fit-content;
+    }
+
+    .hero-title {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2.1rem, 3.8vw, 3.15rem);
+      line-height: 1.3;
+      color: var(--cream-bg);
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: var(--gold-light);
+      font-weight: 700;
+      margin-top: 0.25rem;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.9rem;
+      background: rgba(245, 239, 230, 0.08);
+      border: 1px solid rgba(224, 196, 137, 0.28);
+      border-radius: var(--radius-lg);
+      padding: 1.15rem 1.25rem;
+      font-size: 0.98rem;
+    }
+
+    .meta-label {
+      color: var(--gold-light);
+      font-weight: 700;
+      display: block;
+      font-size: 0.83rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 1px solid rgba(197, 160, 89, 0.35);
+      padding-bottom: 0.75rem;
+    }
+
+    .section-num {
+      font-family: 'Amiri', serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .section-title {
+      font-family: 'Amiri', serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .card-olive .section-title {
+      color: var(--cream-bg);
+    }
+
+    .card-cream .section-title {
+      color: var(--olive-dark);
+    }
+
+    .source-tag {
+      margin-top: 1rem;
+      background: rgba(245, 239, 230, 0.1);
+      color: var(--cream-bg);
+      border-right: 4px solid var(--gold);
+      padding: 0.75rem 1rem;
+      border-radius: 0.9rem;
+      font-size: 0.92rem;
+      font-weight: 500;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+    }
+
+    .grid-5 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+      gap: 1rem;
+    }
+
+    .sub-box-cream {
+      background: var(--cream-card);
+      border: 1px solid rgba(92, 102, 88, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+    }
+
+    .sub-box-olive {
+      background: rgba(245, 239, 230, 0.08);
+      border: 1px solid rgba(224, 196, 137, 0.28);
+      border-radius: var(--radius-lg);
+      padding: 1.35rem;
+      color: var(--cream-bg);
+    }
+
+    .sub-box-title {
+      font-family: 'Amiri', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: var(--olive-dark);
+    }
+
+    .card-olive .sub-box-title,
+    .sub-box-olive .sub-box-title {
+      color: var(--gold-light);
+    }
+
+    ul.styled-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    ul.styled-list li {
+      position: relative;
+      padding-right: 1.2rem;
+      font-size: 0.97rem;
+    }
+
+    ul.styled-list li::before {
+      content: "✦";
+      position: absolute;
+      right: 0;
+      color: var(--gold);
+      font-size: 0.85rem;
+      top: 0.1rem;
+    }
+
+    .ayah-box {
+      font-family: 'Amiri', serif;
+      font-size: 1.35rem;
+      line-height: 2.1;
+      color: var(--cream-bg);
+      background: rgba(38, 44, 36, 0.65);
+      border-radius: 1.1rem;
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.75rem;
+      border: 1px solid rgba(224, 196, 137, 0.22);
+    }
+
+    .dalil-meta {
+      font-size: 0.88rem;
+      color: var(--gold-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .dalil-reason {
+      font-size: 0.95rem;
+      color: var(--cream-bg);
+    }
+
+    .video-card {
+      background: var(--cream-card);
+      color: var(--ink-dark);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid rgba(197, 160, 89, 0.45);
+      max-width: 760px;
+      margin: 1.25rem auto 0;
+    }
+
+    .video-frame-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #1b2019;
+    }
+
+    .video-frame-wrap iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-body {
+      padding: 1.25rem 1.4rem;
+    }
+
+    .video-title {
+      font-family: 'Amiri', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--olive-dark);
+      margin-bottom: 0.35rem;
+    }
+
+    .video-desc {
+      font-size: 0.95rem;
+      color: var(--ink-muted);
+    }
+
+    .alert-note {
+      margin-top: 1rem;
+      background: rgba(197, 160, 89, 0.16);
+      border: 1px solid rgba(224, 196, 137, 0.45);
+      color: var(--cream-bg);
+      padding: 0.9rem 1.15rem;
+      border-radius: 1rem;
+      font-size: 0.92rem;
+    }
+
+    .ref-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.65rem 1.5rem;
+      padding-right: 1.25rem;
+      margin-top: 0.75rem;
+    }
+
+    .ref-list li {
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 860px) {
+      .meta-grid,
+      .grid-2,
+      .grid-3,
+      .ref-list {
+        grid-template-columns: 1fr;
+      }
+
+      .card-cream,
+      .card-olive,
+      .hero-banner {
+        padding: 1.65rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="page-stack">
+
+    <!-- بطاقة العنوان وبيانات الطالبة -->
+    <section class="card-shell hero-banner">
+      <div>
+        <span class="badge-gold">نشاط إثرائي لمقرر: الإسلام وبناء المجتمع</span>
+        <h1 class="hero-title" style="margin-top: 0.9rem;">الإعلام المضلل وأثره على المجتمع</h1>
+        <p class="hero-subtitle">بين الوعي والمسؤولية</p>
+      </div>
+
+      <div class="meta-grid">
+        <div>
+          <span class="meta-label">المقرر الدراسي</span>
+          <span>الإسلام وبناء المجتمع</span>
+        </div>
+        <div>
+          <span class="meta-label">الفصل الدراسي</span>
+          <span>481</span>
+        </div>
+        <div>
+          <span class="meta-label">إعداد الطالبة</span>
+          <span>رند تركي الغضية</span>
+        </div>
+        <div>
+          <span class="meta-label">الرقم الجامعي</span>
+          <span>452200646</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. مقدمة -->
+    <section class="card-shell card-cream">
+      <div class="section-head">
+        <h2 class="section-title">1. مقدمة</h2>
+        <span class="section-num">٠١</span>
+      </div>
+      <p>
+        أصبح الإعلام جزءًا أساسيًا من حياة الإنسان اليومية، وأصبحت الأخبار والمعلومات تصل إلينا بسرعة كبيرة من خلال وسائل الإعلام المختلفة ومنصات التواصل الاجتماعي. ومع هذا الانتشار، ظهرت مشكلة الإعلام المضلل الذي قد ينشر معلومات غير صحيحة أو أخبارًا غير موثوقة، مما يؤثر في وعي الأفراد واستقرار المجتمع.
+      </p>
+      <p style="margin-top: 0.75rem;">
+        ومن هنا تظهر أهمية التثبت من الأخبار، والتحلي بالوعي والمسؤولية قبل تصديق المعلومات أو إعادة نشرها.
+      </p>
+    </section>
+
+    <!-- 2. مفهوم الإعلام المضلل -->
+    <section class="card-shell card-olive">
+      <div class="section-head">
+        <h2 class="section-title">2. مفهوم الإعلام المضلل</h2>
+        <span class="section-num">٠٢</span>
+      </div>
+      <p>
+        الإعلام هو تزويد الناس بالمعلومات الصحيحة والأخبار والإبداعات؛ مما يساعد على فهم المشكلات وتكوين رأي صائب ينمّي المجتمع ويرتقي بأفراده.
+      </p>
+      <p style="margin-top: 0.75rem;">
+        أما عندما يخلو الإعلام من المعلومات الصحيحة والأخبار الموثوقة، فإنه يتحول إلى وسيلة للتضليل والتأثير السلبي في الناس.
+      </p>
+      <div class="source-tag">
+        المصدر: ملخص مقرر سلم 102، الوحدة الثالثة، المشكلة الثانية: انتشار وسائل الإعلام المضللة، صفحة PDF رقم 29.
+      </div>
+    </section>
+
+    <!-- 3. صور الإعلام المضلل -->
+    <section class="card-shell card-cream">
+      <div class="section-head">
+        <h2 class="section-title">3. صور الإعلام المضلل</h2>
+        <span class="section-num">٠٣</span>
+      </div>
+      <p style="margin-bottom: 1rem; color: var(--ink-muted);">
+        تظهر صور التضليل الإعلامي في ممارسات متعددة، منها:
+      </p>
+      <div class="grid-5">
+        <div class="sub-box-cream">
+          <div class="sub-box-title">الصورة الأولى</div>
+          <p>نشر الأخبار دون التأكد من صحتها.</p>
+        </div>
+        <div class="sub-box-cream">
+          <div class="sub-box-title">الصورة الثانية</div>
+          <p>تداول الشائعات والمعلومات مجهولة المصدر.</p>
+        </div>
+        <div class="sub-box-cream">
+          <div class="sub-box-title">الصورة الثالثة</div>
+          <p>اجتزاء التصريحات أو إخراجها من سياقها.</p>
+        </div>
+        <div class="sub-box-cream">
+          <div class="sub-box-title">الصورة الرابعة</div>
+          <p>استخدام الصور والمقاطع المعدلة لتقديم أحداث غير حقيقية.</p>
+        </div>
+        <div class="sub-box-cream">
+          <div class="sub-box-title">الصورة الخامسة</div>
+          <p>نشر العناوين المبالغ فيها بهدف جذب الانتباه.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. أثر الإعلام المضلل على المجتمع -->
+    <section class="card-shell card-olive">
+      <div class="section-head">
+        <h2 class="section-title">4. أثر الإعلام المضلل على المجتمع</h2>
+        <span class="section-num">٠٤</span>
+      </div>
+      <div class="grid-2">
+        <div class="sub-box-olive">
+          <h3 class="sub-box-title">على الفرد</h3>
+          <ul class="styled-list">
+            <li>تكوين أفكار ومعلومات غير صحيحة.</li>
+            <li>التأثر بالخوف والقلق نتيجة الأخبار الكاذبة.</li>
+            <li>اتخاذ قرارات بناءً على معلومات غير موثوقة.</li>
+          </ul>
+        </div>
+        <div class="sub-box-olive">
+          <h3 class="sub-box-title">على المجتمع</h3>
+          <ul class="styled-list">
+            <li>انتشار الشائعات وسوء الفهم.</li>
+            <li>إثارة الخلافات بين أفراد المجتمع.</li>
+            <li>التأثير في الثقة بين الناس والمؤسسات.</li>
+            <li>إضعاف الوعي المجتمعي والمسؤولية في تداول المعلومات.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. موقف الإسلام من نقل الأخبار -->
+    <section class="card-shell card-cream">
+      <div class="section-head">
+        <h2 class="section-title">5. موقف الإسلام من نقل الأخبار</h2>
+        <span class="section-num">٠٥</span>
+      </div>
+      <p style="margin-bottom: 1.2rem;">
+        حث الإسلام على التثبت من الأخبار، ونهى عن اتباع ما لا يعلم الإنسان صحته، ومن الأدلة على ذلك:
+      </p>
+      <div class="grid-3">
+        <article class="card-olive" style="padding: 1.5rem; border-radius: var(--radius-lg);">
+          <div class="sub-box-title">الدليل الأول: من القرآن الكريم</div>
+          <div class="ayah-box">
+            ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا إِن جَاءَكُمْ فَاسِقٌ بِنَبَإٍ فَتَبَيَّنُوا أَن تُصِيبُوا قَوْمًا بِجَهَالَةٍ فَتُصْبِحُوا عَلَىٰ مَا فَعَلْتُمْ نَادِمِينَ﴾
+          </div>
+          <p class="dalil-meta">سورة الحجرات، الآية 6، صفحة 516 في مصحف المدينة النبوية.</p>
+          <p class="dalil-reason"><strong>وجه الاستدلال:</strong> الأمر بالتثبت من الأخبار قبل قبولها أو التصرف بناءً عليها.</p>
+        </article>
+
+        <article class="card-olive" style="padding: 1.5rem; border-radius: var(--radius-lg);">
+          <div class="sub-box-title">الدليل الثاني: من القرآن الكريم</div>
+          <div class="ayah-box">
+            ﴿وَلَا تَقْفُ مَا لَيْسَ لَكَ بِهِ عِلْمٌ إِنَّ السَّمْعَ وَالْبَصَرَ وَالْفُؤَادَ كُلُّ أُولَٰئِكَ كَانَ عَنْهُ مَسْئُولًا﴾
+          </div>
+          <p class="dalil-meta">سورة الإسراء، الآية 36، صفحة 285 في مصحف المدينة النبوية.</p>
+          <p class="dalil-reason"><strong>وجه الاستدلال:</strong> النهي عن اتباع ما لا يقوم على علم أو تحقق.</p>
+        </article>
+
+        <article class="card-olive" style="padding: 1.5rem; border-radius: var(--radius-lg);">
+          <div class="sub-box-title">الدليل الثالث: من السنة النبوية</div>
+          <div class="ayah-box">
+            «آية المنافق ثلاث: إذا حدث كذب، وإذا وعد أخلف، وإذا اؤتمن خان».
+          </div>
+          <p class="dalil-meta">الراوي: أبو هريرة رضي الله عنه. المصدر: صحيح البخاري، حديث رقم 33، وصحيح مسلم، حديث رقم 59.</p>
+          <p class="dalil-reason"><strong>وجه الاستدلال:</strong> التحذير من الكذب، وهو من أبرز صور التضليل.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- مقطع مرئي لرأي العلماء -->
+    <section class="card-shell card-olive">
+      <div class="section-head">
+        <h2 class="section-title">رأي العلماء في الموضوع</h2>
+        <span class="section-num">🎥</span>
+      </div>
+      <p>
+        مقطع مرئي يوضح التوجيهات الشرعية حول التثبت من الأخبار والتحذير من نشر المعلومات غير الموثوقة.
+      </p>
+      <div class="video-card">
+        <div class="video-frame-wrap">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/eYM3Jd77dns?si=USpM7EUiQHT0e0eH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-body">
+          <h3 class="video-title">التثبت وخطورة الإعلام المضلل</h3>
+          <p class="video-desc">مادة مرئية توعوية حول مسؤولية الكلمة ونقل الأخبار.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. كيف نحمي أنفسنا من الإعلام المضلل؟ -->
+    <section class="card-shell card-cream">
+      <div class="section-head">
+        <h2 class="section-title">6. كيف نحمي أنفسنا من الإعلام المضلل؟</h2>
+        <span class="section-num">٠٦</span>
+      </div>
+      <div class="grid-2">
+        <div class="sub-box-cream">
+          <h3 class="sub-box-title">الأساليب الواردة في ملخص المقرر</h3>
+          <ul class="styled-list">
+            <li>1. مراقبة الله في السر والعلن.</li>
+            <li>2. تنظيم الوقت.</li>
+            <li>3. ممارسة الهوايات.</li>
+          </ul>
+        </div>
+        <div class="sub-box-cream">
+          <h3 class="sub-box-title">ممارسات لتعزيز الوعي والتحقق</h3>
+          <ul class="styled-list">
+            <li>التأكد من مصدر الخبر قبل نشره.</li>
+            <li>الرجوع إلى الجهات الرسمية عند وجود أخبار مهمة.</li>
+            <li>عدم إعادة إرسال المعلومات مجهولة المصدر.</li>
+            <li>التمييز بين الخبر والرأي الشخصي.</li>
+            <li>عدم الانسياق وراء العناوين المثيرة.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. إثراء من مصادر سعودية رسمية -->
+    <section class="card-shell card-olive">
+      <div class="section-head">
+        <h2 class="section-title">7. إثراء من مصادر سعودية رسمية</h2>
+        <span class="section-num">٠٧</span>
+      </div>
+      <p style="margin-bottom: 1rem;">
+        يمكن الاستفادة من المواد التوعوية الصادرة عن الجهات الرسمية في المملكة، ومنها:
+      </p>
+      <div class="grid-3">
+        <div class="sub-box-olive">
+          <h3 class="sub-box-title">الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا)</h3>
+          <p>مواد التوعية بالتزييف العميق والمحتوى الرقمي المزيّف.</p>
+        </div>
+        <div class="sub-box-olive">
+          <h3 class="sub-box-title">الهيئة العامة لتنظيم الإعلام</h3>
+          <p>الأدلة والضوابط المتعلقة بالعمل الإعلامي.</p>
+        </div>
+        <div class="sub-box-olive">
+          <h3 class="sub-box-title">وكالة الأنباء السعودية (واس)</h3>
+          <p>المواد والتقارير المتعلقة بالشائعات وأثرها على المجتمع.</p>
+        </div>
+      </div>
+      <div class="alert-note">
+        <strong>تنبيه:</strong> تضاف روابط المواد الرسمية المحددة بعد اختيار المادة المناسبة والتحقق من رابطها ومحتواها. ولا يُنسب أي مقطع إلى وزارة أو جهة حكومية إلا إذا كان منشورًا عبر قناتها الرسمية.
+      </div>
+    </section>
+
+    <!-- 8. الخاتمة والمراجع -->
+    <section class="card-shell card-cream">
+      <div class="section-head">
+        <h2 class="section-title">8. الخاتمة</h2>
+        <span class="section-num">٠٨</span>
+      </div>
+      <p>
+        في الختام، يتضح أن الإعلام وسيلة مؤثرة في بناء وعي المجتمع، وقد يكون نافعًا عندما يقوم على الصدق والمصداقية، أو ضارًا عندما يُستخدم لنشر الشائعات والمعلومات المضللة.
+      </p>
+      <p style="margin-top: 0.75rem;">
+        وقد أرشدنا الإسلام إلى أهمية التثبت من الأخبار وتحمل مسؤولية ما ننقله، لذلك فإن الوعي الإعلامي مسؤولية مشتركة تبدأ من الفرد وتمتد إلى المجتمع بأكمله.
+      </p>
+      <p style="margin-top: 0.85rem; font-family: 'Amiri', serif; font-size: 1.35rem; font-weight: 700; color: var(--olive-dark);">
+        فلنجعل التثبت عادة، والوعي مسؤولية، والصدق أساسًا لكل ما ننشره.
+      </p>
+
+      <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(92, 102, 88, 0.25);">
+        <h3 class="sub-box-title" style="font-size: 1.5rem;">المراجع</h3>
+        <ol class="ref-list">
+          <li>ملخص مقرر سلم 102، الوحدة الثالثة: المشكلات الاجتماعية، المشكلة الثانية: انتشار وسائل الإعلام المضللة، صفحة PDF رقم 29.</li>
+          <li>القرآن الكريم، سورة الحجرات، الآية 6.</li>
+          <li>القرآن الكريم، سورة الإسراء، الآية 36.</li>
+          <li>صحيح البخاري، حديث رقم 33.</li>
+          <li>صحيح مسلم، حديث رقم 59.</li>
+          <li>الهيئة السعودية للبيانات والذكاء الاصطناعي (سدايا).</li>
+          <li>الهيئة العامة لتنظيم الإعلام.</li>
+          <li>وكالة الأنباء السعودية (واس).</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
